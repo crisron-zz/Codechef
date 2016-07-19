@@ -9,7 +9,7 @@ long long int power( int a, int b, int mod ) {
     if( !b ) {
         return 1;
     }
-    long long int temp = power( a, b / 2, mod ) * power( a, b / 2, mod ) % mod;
+    long long temp = power( a, b / 2, mod ) * power( a, b / 2, mod ) % mod;
     // b is even
     if( !( b & 1 ) ) {
         return temp;
